@@ -1,4 +1,5 @@
 #!/bin/bash
+# ----------------- https://github.com/Dolbaeb777K/UsefullScripts/blob/main/Hyprland/PluginToggle.sh ------------------
 #   - made by AI-GigaChat and me - Dolbaeb777K or Hip.
 
 
