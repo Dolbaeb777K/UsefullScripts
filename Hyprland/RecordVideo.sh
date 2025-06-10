@@ -3,8 +3,8 @@
 # VARIABLES
 base_string="-A actionNum1=\${monitor[Num2]}"
 
-dir="$HOME/Видео/Видеозаписи"
-sDir="$HOME/.config/hypr/scripts"
+dir="$(xdg-user-dir VIDEOS)/"
+sDir="$HOME/.config/hypr/Scripts" # Change it to your Scripts directory if you want.
 
 time=$(date +"%Y-%m-%d %H-%M-%S")
 
@@ -59,7 +59,7 @@ notify_view() {
     case "$resp" in
     action1)
       echo "Opening " $fileReg
-      mpv "$fileReg"
+      mpv "$fileReg" || vlc "$fileReg"
       ;;
     action2)
       rm "$fileReg"
